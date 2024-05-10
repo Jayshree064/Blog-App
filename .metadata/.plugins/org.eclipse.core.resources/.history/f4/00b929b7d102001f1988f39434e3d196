@@ -1,0 +1,59 @@
+package com.tatvasoft.BlogApp.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tatvasoft.BlogApp.dto.BlogResponseDto;
+import com.tatvasoft.BlogApp.entities.Blog;
+import com.tatvasoft.BlogApp.service.BlogService;
+
+@RestController
+@CrossOrigin
+public class BlogController {
+
+	@Autowired
+	private BlogService blogService;
+	
+	@GetMapping("/")
+	public ResponseEntity<BlogResponseDto> allBlogs(){
+		try {			
+			List<Blog> response = blogService.getAllBlog();
+			if(response.size()==0) {
+				BlogResponseDto res = BlogResponseDto.builder().message("There is No Blog").status(true).data(response).build();
+				return ResponseEntity.status(HttpStatus.OK).body(res);
+			}
+			else {
+				BlogResponseDto res = BlogResponseDto.builder().message("All blogs").status(true).data(response).build();
+				return ResponseEntity.status(HttpStatus.OK).body(res); 
+			}
+		}catch (Exception e) {
+			BlogResponseDto res = BlogResponseDto.builder().message("Internal Server Error").status(true).data(new ArrayList<>()).build();
+			return ResponseEntity.status(HttpStatus.OK).body(res);
+		}
+	}
+	
+	@PostMapping("/blog/{id}")
+	public ResponseEntity<Blog> getBlockById(@PathVariable("id") long id){
+		return ResponseEntity.status(200).body(blogService.getBlogById(id));
+	}
+	
+	@PostMapping("/blog")
+	public ResponseEntity<List<Blog>> getBlockByUser(@RequestBody Map<String, Object> requestObj){
+		String email = (String) requestObj.get("email");
+		return ResponseEntity.status(200).body(blogService.getBlogByUser(email));
+	}
+	
+}

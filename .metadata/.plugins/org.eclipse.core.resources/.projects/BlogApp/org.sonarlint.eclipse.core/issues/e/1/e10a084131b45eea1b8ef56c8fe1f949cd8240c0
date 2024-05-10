@@ -1,0 +1,12 @@
+
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 4c9fbf7a2256dcfb4616b86d8bf329deh
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+r
+java:S1155">Use isEmpty() to check whether the collection is empty or not.b 4089bad69eea2cc938c63cd1fe962784h
+e
+java:S1128"*Remove this unused import 'java.util.Map'.8¾–•Âò1b 03ec136776d19432e0a31b46ebe07d1ah
+‹
+java:S1128"PRemove this unused import 'org.springframework.web.bind.annotation.RequestBody'.8¾–•Âò1b 56f405ddb5bc363f3774807aeb136e18h
+{
+java:S1128"@Remove this unused import 'com.tatvasoft.BlogApp.entities.Blog'.8¾–•Âò1b cb474a7837794d7e70a32a88e8e79cb0h

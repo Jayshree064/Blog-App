@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+						http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+						http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+	<changeSet id="8" author="jayshree" runOnChange="true">
+		<createTable tableName="sub_type">
+			<column name="sub_type_id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="varchar(255)">
+				<constraints nullable="false"/>
+			</column>
+			<column name="type_id" type="bigint">
+				<constraints nullable="false"/>
+			</column>
+			<column name="created_date" type="datetime">
+				<constraints nullable="true"/>
+			</column>
+			<column name="modified_date" type="datetime">
+				<constraints nullable="true"/>
+			</column>
+			<column name="deleted_date" type="datetime">
+				<constraints nullable="true"/>
+			</column>
+		</createTable>
+	</changeSet>
+	
+	<changeSet id="9" author="jayshree">
+		<addForeignKeyConstraint baseTableName="sub_type" baseColumnNames="type_id" constraintName="fk_sub_type_id_type_id" referencedTableName="type" referencedColumnNames="id" />
+	</changeSet>
+	
+	<changeSet id="10" author="Jayshree" labels="data">
+		<loadData tableName="sub_type" file="classpath:/db/changelog/subtype.csv" separator=",">
+			<column header="sub_type_id"
+				    name="sub_type_id"
+				    type="NUMERIC"/>
+			<column header="name"
+					name="name"
+					type="STRING"/>
+			<column header="type_id"
+					name="type_id"
+					type="NUMERIC"/>
+			<column header="created_date"
+					name="created_date"/>
+			<column header="modified_date"
+					name="modified_date"/>
+			<column header="deleted_date"
+					name="deleted_date"/>
+		</loadData>
+	</changeSet>
+
+</databaseChangeLog>

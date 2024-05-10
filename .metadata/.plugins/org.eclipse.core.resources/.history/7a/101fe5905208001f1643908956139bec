@@ -1,0 +1,18 @@
+package com.tatvasoft.BlogApp.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.ReportingPolicy;
+
+import com.tatvasoft.BlogApp.dto.BlogRequestDto;
+import com.tatvasoft.BlogApp.entities.Blog;
+
+@Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE)
+public interface BlogMapper {
+
+//	@Mapping(source = "typeId", target = "typeId.id")
+//    @Mapping(source = "subtypeId", target = "subTypeId.id")
+//    @Mapping(source = "user", target = "author.email")
+//	Blog mapBlogDtoToBlog(BlogRequestDto blogData);
+		
+}

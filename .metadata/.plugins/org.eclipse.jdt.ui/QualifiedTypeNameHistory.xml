@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Long"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.dto.TypeRequestDto"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.dto.ResponseDto"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.Builder"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.repository.SubtypeRepo"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.repository.TypeRepo"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.entities.Subtype"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.repository.UserRepo"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="org.mapstruct.Mapper"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.mapper.BlogMapper"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.entities.Blog"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.entities.Type"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.entities.User"/>
+    <fullyQualifiedTypeName name="org.mapstruct.Mapping"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="org.mapstruct.ReportingPolicy"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.enums.BlogStatusEnum"/>
+    <fullyQualifiedTypeName name="com.tatvasoft.BlogApp.dto.BlogRequestDto"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

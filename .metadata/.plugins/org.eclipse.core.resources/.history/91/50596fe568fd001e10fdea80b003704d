@@ -1,0 +1,17 @@
+package com.tatvasoft.BlogApp.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tatvasoft.BlogApp.entities.Blog;
+import com.tatvasoft.BlogApp.service.BlogService;
+
+@RestController
+public class BlogController {
+
+	private BlogService blogService;
+	
+//	public ResponseEntity<Blog> getAllBlog(){
+//		return 
+//	}
+}

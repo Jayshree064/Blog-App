@@ -1,0 +1,13 @@
+package com.tatvasoft.BlogApp.mapper;
+
+import org.mapstruct.Mapper;
+
+import com.tatvasoft.BlogApp.dto.BlogRequestDto;
+import com.tatvasoft.BlogApp.entities.Blog;
+
+@Mapper
+public interface BlogMapper {
+
+	Blog mapBlogDtoToBlog(BlogRequestDto blogData);
+	
+}

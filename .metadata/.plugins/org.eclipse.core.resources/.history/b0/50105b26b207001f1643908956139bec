@@ -1,0 +1,13 @@
+package com.tatvasoft.BlogApp.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.ReportingPolicy;
+
+import com.tatvasoft.BlogApp.dto.BlogRequestDto;
+import com.tatvasoft.BlogApp.entities.Blog;
+
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.WARN)
+public interface BlogMapper {
+
+	Blog mapBlogDtoToBlog(BlogRequestDto blogData);
+}

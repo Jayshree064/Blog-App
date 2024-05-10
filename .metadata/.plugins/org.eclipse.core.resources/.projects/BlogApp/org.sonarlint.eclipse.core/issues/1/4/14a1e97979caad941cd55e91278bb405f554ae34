@@ -1,0 +1,18 @@
+
+r
+java:S1155$">Use isEmpty() to check whether the collection is empty or not.b 4089bad69eea2cc938c63cd1fe962784h
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 4c9fbf7a2256dcfb4616b86d8bf329deh
+Š
+java:S1192-"VDefine a constant instead of duplicating this literal "Internal Server Error" 4 times.b f9742b65b01454380fe33bf6d2d407c9h
+Œ
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.8™·Æ“ó1b 3b80d5c9c840440eb47c26354612dcbeh
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+…
+java:S1192%"QDefine a constant instead of duplicating this literal "There is No Blog" 3 times.b 7fac0595aa361367f94cf89fc9becd67h
+e	java:S106Y"+Replace this use of System.out by a logger.8±ÉÐÄò1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e	java:S106_"+Replace this use of System.out by a logger.8Ë‹ÏÁó1b bb1c3f2ea781263d3a2bb92b06a2061fh
+r
+java:S1155I">Use isEmpty() to check whether the collection is empty or not.b 4089bad69eea2cc938c63cd1fe962784h
+
+java:S1128	"DRemove this unused import 'org.springframework.http.HttpStatusCode'.8™·Æ“ó1b b12ed1ece419b7f2e6287376cafb8002h
